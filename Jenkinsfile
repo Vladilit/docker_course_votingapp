@@ -4,6 +4,7 @@ node {
    }
    stage('Build') {
       // Run the maven build
+      sh 'cd Exercises/02.VotingSystem/'
       sh 'docker-compose up'
    }
    stage('Results') {
