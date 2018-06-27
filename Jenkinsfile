@@ -1,7 +1,7 @@
 node {
-   //env.DOCKER_HOST="127.0.0.1"
-   env.DOCKERD="/usr/local/bin/dockerd"
-   env.DOCKER_OPTS="--dns 8.8.8.8 --dns 8.8.4.4"
+   env.DOCKER_HOST="http://127.0.0.1:3128/"
+   //env.DOCKERD="/usr/local/bin/dockerd"
+   //env.DOCKER_OPTS="--dns 8.8.8.8 --dns 8.8.4.4"
    
    stage('Preparation') { // for display purposes
       git 'https://github.com/Vladilit/docker_course_votingapp.git'
