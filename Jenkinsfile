@@ -1,4 +1,5 @@
 node {
+   env.DOCKER_HOST=127.0.0.1
    stage('Preparation') { // for display purposes
       git 'https://github.com/Vladilit/docker_course_votingapp.git'
    }
